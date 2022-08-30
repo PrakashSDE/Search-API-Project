@@ -11,6 +11,7 @@ dark.onclick = function myFunction() {
   }
 };
 
+
 // for opening text
 
 const text = document.querySelector(".front");
@@ -39,7 +40,8 @@ function complete() {
   timer = null;
 }
 
-//the wikipedia search
+
+ //the wikipedia search
 
 const url =
   "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=20&format=json&origin=*&srsearch=";
@@ -93,7 +95,6 @@ const renderResults = (list) => {
         </div>`;
 };
 
-
 //the github-API working
 
 const APIURL = "https://api.github.com/users/";
@@ -101,6 +102,7 @@ const APIURL = "https://api.github.com/users/";
 const main = document.getElementById("result");
 const form = document.getElementById("form-github");
 const search = document.getElementById("search");
+
 
   //getUser("prakashsde"); by default
 
