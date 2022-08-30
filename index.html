@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/png" href="photo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>We Search for your preference</title>
+  </head>
+
+  <body>
+      <div class="Container">
+        <img src="sun.png" id="dark" />
+        <div>
+          <h1 class="front">We                 search  by your wish</h1>
+        </div>
+      </div>
+     
+      <!--The Wikipedia-->
+      <section class="section1">
+        <div class="container_people" data-tilt>
+          <header class="header" style="color:rgb(122, 122, 122);">
+            <h2 class="title">
+              <i class="fa-brands fa-wikipedia-w" style="font-size: 200%"></i
+              ><br />Wikipedia
+            </h2>
+            <small class="subtitle">Search by name</small>
+             <form class="form">
+              <input type="text" class="form-input" placeholder="    Search" />
+              <button type="submit" class="submit-btn"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1024px-Wikipedia-logo-v2.svg.png" height ="50" width="50" /></button>
+            </form>
+            <div class="results"></div>
+        </div>
+
+        <!-- The Github-->
+        <div class="container_people" data-tilt>
+          <header class="header" style="color: rgb(122, 122, 122);">
+            <h2 class="title">
+              <i class="fa-brands fa-github" style="font-size: 200%;"></i><br />github
+            </h2>
+            <small class="subtitle">  Search a Github User </small>
+            <form id="form-github">
+              <input type="text" id="search" placeholder="   Search a Github User" />
+          </form>
+          <main id="result"></main>
+        </div>
+
+
+        <div class="container_people" data-tilt>
+          <header class="header" style="color: #0e76a8;">
+            <h2 class="title">
+              <i class="fa-brands fa-linkedin" style="font-size: 200%;"></i><br />linkedin
+            </h2>
+            <small class="subtitle">Search by name </small>
+            <input type="text" id="filter" placeholder="    Search" />
+          </header>
+          <ul id="result" class="user-list"></ul>
+        </div>
+
+
+        <div class="container_people" data-tilt>
+          <header class="header" style="color: #00acee;">
+            <h2 class="title">
+              <i class="fa-brands fa-twitter" style="font-size: 200%;"></i><br />twiter
+            </h2>
+            <small class="subtitle">Search by name </small>
+            <input type="text" id="filter" placeholder="    Search" />
+          </header>
+          <ul id="result" class="user-list"></ul>
+        </div>
+
+
+        <div class="container_people" data-tilt>
+          <header class="header">
+            <h2 class="instagram_title">
+              <i class="fa-brands fa-instagram"style="font-size: 200%;"></i><br />instagram
+            </h2>
+            <small class="subtitle">Search by name </small>
+            <input type="text" id="filter" placeholder="    Search" />
+          </header>
+          <ul id="result" class="user-list"></ul>
+        </div>
+ 
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="vanilla-tilt.js"></script>
+  </body>
+</html>

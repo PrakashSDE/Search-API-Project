@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:ital,wght@0,500;1,700&family=Ms+Madi&family=Open+Sans:wght@600&family=Roboto:ital,wght@1,100&family=Whisper&display=swap");
+* {
+  padding: 0px;
+  margin: 0%;
+}
+
+:root{
+  --primary-color: #1c1c1c;
+  --secondary-color:#d8d8d8;
+}
+
+.light-theme{
+    --primary-color:#ffffff;
+    --secondary-color:#000000;
+  }
+
+#dark{
+  position:absolute;
+  top: 25px;
+  right: 30px;
+  width: 35px;
+
+}
+
+body{
+  background-color: var(--primary-color);
+}
+
+h1 {     
+  font-size: 170px;
+  padding-top: 1%;
+  padding-left:10%;
+  padding-right:10% ;
+  padding-bottom:3%;
+  
+}
+
+@keyframes float{
+          0%{
+           background-position:0% 50%;
+          }  
+
+          50%{
+          background-position:100% 50%;
+                   }
+         
+         100%{
+          background-position:0% 50%;
+         }
+}
+
+
+
+.section1{
+  background-color:var(--primary-color);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+  
+.container_people {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  margin: 15px;
+  box-shadow: 0px 0px 11px rgba(126, 149, 45, 0.952);
+  box-shadow: inset;
+  overflow: hidden;
+  width: 800px;
+  height: 500px;
+  margin: 80px;
+  color:rgb(252, 246, 246);
+}
+
+.subtitle{
+  display: inline-block;
+  margin: 5px 0px;
+  color:var(--secondary-color);
+  
+}
+
+.header {
+  color:var(--primary-color);
+  padding: 30px 20px;
+
+}
+
+.header input {
+  background-color: rgba(75, 75, 75, 0.331);
+  border: 0;
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 10px 2px ;
+  width: 60%;
+  margin-top: 15px;
+  margin-bottom:15px;
+  align-items: center;
+}
+.instagram_title{
+  background: radial-gradient(circle at 100% 200%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#filter{
+  color: var(--secondary-color);
+  font-size: 15px;
+}
+/*text animation*/
+
+span{
+  opacity: 0;
+  transition: all 1s ease ;
+  transform:translatex(1000px);
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 30px;
+  background: linear-gradient(
+    135deg,
+    #47163e,
+    #b2d117,
+    #00a2ff,
+    #2cc19b,
+    #752b68,
+    #8ec516,
+    #00a2ff,
+    #09f1b8
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size:500% 500%;
+  animation:float 25s ease-in-out infinite;
+  
+}
+
+span.fade{
+  opacity:1;
+  transform:translateX(0px);
+
+}
+
+.error {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--red-dark);
+}
+
+.articles {
+  display: grid;
+  gap: 1rem;
+}
+
+.articles a {
+  display: block;
+  background: rgb(48, 62, 19);
+  color: white;
+  padding: 1.5rem 1.5rem;
+  border-radius:
+  transition: 
+}
+.articles p {
+  color: 
+  transition: 
+}
+
+
+@media screen and (min-width: 768px) {
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+@media screen and (min-width: 992px) {
+  .articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.submit-btn {
+  background: var(--backgroundColor);
+  border: 1px solid var(--grey-200);
+  cursor: pointer;
+  padding-left: 15px;
+
+}
+
+.form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+    justify-content: center;
+  }
+
+/*github CSS*/
+
+body{
+    display: flex;
+    flex-direction: column  
+}
+
+.card {
+    background-color:rgb(48, 62, 19);
+    border-radius: 20px;
+    display: flex;
+    padding: 1.2rem;
+    max-width: 800px;
+}
+
+.avatar {
+    border: 10px solid #324c2e;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    background-color: #196442;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.5rem;
+    margin-top: .4rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+
+
+
+
